@@ -1,0 +1,84 @@
+/* 
+ * TOKENS: ESPAÇAMENTO
+ * Sistema de tokens de espaçamento para o portfólio
+ */
+
+ :root {
+    /* Escala de espaçamento base (8px) */
+    --spacing-unit: 8px;
+    
+    /* Escala de espaçamento */
+    --spacing-2xs: calc(var(--spacing-unit) * 0.25);  /* 2px */
+    --spacing-xs: calc(var(--spacing-unit) * 0.5);    /* 4px */
+    --spacing-sm: var(--spacing-unit);                /* 8px */
+    --spacing-md: calc(var(--spacing-unit) * 2);      /* 16px */
+    --spacing-lg: calc(var(--spacing-unit) * 3);      /* 24px */
+    --spacing-xl: calc(var(--spacing-unit) * 4);      /* 32px */
+    --spacing-2xl: calc(var(--spacing-unit) * 6);     /* 48px */
+    --spacing-3xl: calc(var(--spacing-unit) * 8);     /* 64px */
+    --spacing-4xl: calc(var(--spacing-unit) * 12);    /* 96px */
+    --spacing-5xl: calc(var(--spacing-unit) * 16);    /* 128px */
+    
+    /* Tokens específicos */
+    --section-padding-vertical: var(--spacing-3xl);
+    --card-padding: var(--spacing-lg);
+    --container-padding: var(--spacing-lg);
+    
+    /* Breakpoints */
+    --breakpoint-mobile: 640px;
+    --breakpoint-tablet: 768px;
+    --breakpoint-desktop: 1024px;
+    --breakpoint-widescreen: 1216px;
+    
+    /* Bordas e arredondamentos */
+    --border-width-thin: 1px;
+    --border-width-thick: 2px;
+    --border-width-heavy: 4px;
+    
+    --border-radius-sm: 4px;
+    --border-radius-md: 8px;
+    --border-radius-lg: 12px;
+    --border-radius-pill: 9999px;
+    
+    /* Sombras */
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    
+    /* Transições */
+    --transition-fast: 150ms;
+    --transition-normal: 300ms;
+    --transition-slow: 500ms;
+    --transition-timing-default: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Classes utilitárias para espaçamento que complementam as do Bulma */
+.has-margin-2xs { margin: var(--spacing-2xs); }
+.has-margin-xs { margin: var(--spacing-xs); }
+.has-margin-sm { margin: var(--spacing-sm); }
+.has-margin-md { margin: var(--spacing-md); }
+.has-margin-lg { margin: var(--spacing-lg); }
+.has-margin-xl { margin: var(--spacing-xl); }
+.has-margin-2xl { margin: var(--spacing-2xl); }
+.has-margin-3xl { margin: var(--spacing-3xl); }
+
+.has-padding-2xs { padding: var(--spacing-2xs); }
+.has-padding-xs { padding: var(--spacing-xs); }
+.has-padding-sm { padding: var(--spacing-sm); }
+.has-padding-md { padding: var(--spacing-md); }
+.has-padding-lg { padding: var(--spacing-lg); }
+.has-padding-xl { padding: var(--spacing-xl); }
+.has-padding-2xl { padding: var(--spacing-2xl); }
+.has-padding-3xl { padding: var(--spacing-3xl); }
+
+/* Classes utilitárias para bordas e sombras */
+.has-radius-sm { border-radius: var(--border-radius-sm); }
+.has-radius-md { border-radius: var(--border-radius-md); }
+.has-radius-lg { border-radius: var(--border-radius-lg); }
+.has-radius-pill { border-radius: var(--border-radius-pill); }
+
+.has-shadow-sm { box-shadow: var(--shadow-sm); }
+.has-shadow-md { box-shadow: var(--shadow-md); }
+.has-shadow-lg { box-shadow: var(--shadow-lg); }
+.has-shadow-xl { box-shadow: var(--shadow-xl); }

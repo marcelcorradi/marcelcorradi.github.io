@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seu Nome | Product Designer</title>
+
+    <!-- Fonte Inter do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bulma CSS Framework -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+
+    <!-- Font Awesome para ícones -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="css/tokens/colors.css" />
+    <link rel="stylesheet" href="css/tokens/typography.css" />
+    <link rel="stylesheet" href="css/tokens/spacing.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <!-- Navegação -->
+    <nav
+      class="navbar is-white is-fixed-top"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div class="container">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="/">
+            <div class="logo-square"></div>
+          </a>
+
+          <a
+            role="button"
+            class="navbar-burger"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="navbarBasic"
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+
+        <div id="navbarBasic" class="navbar-menu">
+          <div class="navbar-end">
+            <a class="navbar-item is-active" href="index.html"> Trabalhos </a>
+            <a class="navbar-item" href="about.html"> Sobre </a>
+            <a class="navbar-item" href="contact.html"> Contato </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Seção Hero -->
+    <section class="hero is-white is-fullheight-with-navbar">
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns is-vcentered">
+            <div class="column is-5">
+              <h1 class="title hero-name">Seu<br />Nome</h1>
+              <p class="subtitle hero-subtitle">
+                Product Designer Sênior especializado em Design Systems
+              </p>
+              <p class="hero-description">
+                Transformo complexidade em sistemas escaláveis e coesos que
+                capacitam equipes a criar produtos digitais consistentes e
+                centrados no usuário.
+              </p>
+              <div class="mt-5">
+                <a href="#projects" class="hero-scroll-link">
+                  Conheça meu trabalho
+                  <span class="icon">
+                    <i class="fas fa-arrow-down"></i>
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="column is-5 is-offset-2">
+              <div class="hero-image-container">
+                <figure class="hero-image">
+                  <img
+                    src="img/profile-photo.jpg"
+                    alt="Seu Nome - Product Designer"
+                  />
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de Projetos -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <h2 class="projects-title">Meus Projetos</h2>
+        <p class="projects-subtitle">
+          Veja uma seleção dos meus trabalhos mais recentes
+        </p>
+
+        <div class="project-list">
+          <!-- Projeto 1 -->
+          <article class="project-card animate-on-scroll">
+            <div class="columns is-vcentered">
+              <div class="column is-5">
+                <div class="project-image-container">
+                  <img
+                    src="img/projects/fintech-design-system.jpg"
+                    alt="Sistema de Design para Fintech"
+                    class="project-image"
+                  />
+                </div>
+              </div>
+              <div class="column is-6 is-offset-1">
+                <div class="project-content">
+                  <div class="project-category">DESIGN SYSTEM</div>
+                  <h3 class="project-title">
+                    Criação e escalabilidade de um sistema de design
+                  </h3>
+                  <p class="project-description">
+                    Desenvolvimento de um sistema de design escalável para
+                    plataforma de investimentos, incluindo componentes
+                    acessíveis e documentação técnica.
+                  </p>
+                  <a
+                    href="projects/design-system-fintech.html"
+                    class="project-link"
+                  >
+                    <span>LEIA MAIS</span>
+                    <span class="icon"><i class="fas fa-arrow-right"></i></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Projeto 2 -->
+          <article class="project-card animate-on-scroll">
+            <div class="columns is-vcentered">
+              <div class="column is-5">
+                <div class="project-image-container">
+                  <img
+                    src="img/projects/ecommerce-redesign.jpg"
+                    alt="Redesign de E-commerce"
+                    class="project-image"
+                  />
+                </div>
+              </div>
+              <div class="column is-6 is-offset-1">
+                <div class="project-content">
+                  <div class="project-category">PRODUCT DESIGN</div>
+                  <h3 class="project-title">
+                    Redesign de experiência para e-commerce B2B
+                  </h3>
+                  <p class="project-description">
+                    Reimaginação da experiência de compra para uma plataforma
+                    B2B com foco em melhorar conversões e simplificar o processo
+                    de compra.
+                  </p>
+                  <a
+                    href="projects/ecommerce-redesign.html"
+                    class="project-link"
+                  >
+                    <span>LEIA MAIS</span>
+                    <span class="icon"><i class="fas fa-arrow-right"></i></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Projeto 3 -->
+          <article class="project-card animate-on-scroll">
+            <div class="columns is-vcentered">
+              <div class="column is-5">
+                <div class="project-image-container">
+                  <img
+                    src="img/projects/healthcare-app.jpg"
+                    alt="Aplicativo de Saúde"
+                    class="project-image"
+                  />
+                </div>
+              </div>
+              <div class="column is-6 is-offset-1">
+                <div class="project-content">
+                  <div class="project-category">UX/UI DESIGN</div>
+                  <h3 class="project-title">
+                    App de saúde focado em acessibilidade e engajamento
+                  </h3>
+                  <p class="project-description">
+                    Melhoria da experiência do usuário em aplicativo de saúde,
+                    focando em acessibilidade e simplificação do agendamento de
+                    consultas.
+                  </p>
+                  <a href="projects/healthcare-app.html" class="project-link">
+                    <span>LEIA MAIS</span>
+                    <span class="icon"><i class="fas fa-arrow-right"></i></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de Clientes -->
+    <section class="section clients-section">
+      <div class="container">
+        <h2 class="clients-title">Clientes e Empresas</h2>
+        <p class="clients-subtitle">
+          Empresas com as quais tive o prazer de colaborar
+        </p>
+
+        <div class="client-logos-container">
+          <div class="client-logos-carousel">
+            <div class="client-logo">
+              <img
+                src="img/clients/client-logo-1.png"
+                alt="Nome da Empresa 1"
+              />
+            </div>
+            <div class="client-logo">
+              <img
+                src="img/clients/client-logo-2.png"
+                alt="Nome da Empresa 2"
+              />
+            </div>
+            <div class="client-logo">
+              <img
+                src="img/clients/client-logo-3.png"
+                alt="Nome da Empresa 3"
+              />
+            </div>
+            <div class="client-logo">
+              <img
+                src="img/clients/client-logo-4.png"
+                alt="Nome da Empresa 4"
+              />
+            </div>
+            <div class="client-logo">
+              <img
+                src="img/clients/client-logo-5.png"
+                alt="Nome da Empresa 5"
+              />
+            </div>
+            <div class="client-logo">
+              <img
+                src="img/clients/client-logo-6.png"
+                alt="Nome da Empresa 6"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de Expertise -->
+    <section class="section expertise-section">
+      <div class="container">
+        <h2 class="expertise-title">Áreas de Expertise</h2>
+        <p class="expertise-subtitle">
+          Habilidades e competências especializadas
+        </p>
+
+        <div class="expertise-grid">
+          <!-- Expertise 1: Design Systems -->
+          <div class="expertise-card animate-on-scroll">
+            <div class="expertise-icon">
+              <i class="fas fa-layer-group"></i>
+            </div>
+            <h3 class="expertise-name">Design Systems</h3>
+            <p class="expertise-description">
+              Criação e manutenção de sistemas de design escaláveis,
+              documentados e acessíveis para produtos digitais.
+            </p>
+          </div>
+
+          <!-- Expertise 2: Componentes Acessíveis -->
+          <div class="expertise-card animate-on-scroll">
+            <div class="expertise-icon">
+              <i class="fas fa-universal-access"></i>
+            </div>
+            <h3 class="expertise-name">Componentes Acessíveis</h3>
+            <p class="expertise-description">
+              Desenvolvimento de componentes que seguem as diretrizes WCAG e
+              proporcionam experiências inclusivas para todos os usuários.
+            </p>
+          </div>
+
+          <!-- Expertise 3: Documentação Técnica -->
+          <div class="expertise-card animate-on-scroll">
+            <div class="expertise-icon">
+              <i class="fas fa-book"></i>
+            </div>
+            <h3 class="expertise-name">Documentação Técnica</h3>
+            <p class="expertise-description">
+              Elaboração de documentação clara e abrangente, facilitando a
+              adoção e implementação de componentes por equipes
+              multidisciplinares.
+            </p>
+          </div>
+
+          <!-- Expertise 4: Design de Interação -->
+          <div class="expertise-card animate-on-scroll">
+            <div class="expertise-icon">
+              <i class="fas fa-hand-pointer"></i>
+            </div>
+            <h3 class="expertise-name">Design de Interação</h3>
+            <p class="expertise-description">
+              Criação de fluxos de usuário e interações que proporcionam
+              experiências intuitivas e eficientes.
+            </p>
+          </div>
+
+          <!-- Expertise 5: Pesquisa de Usuário -->
+          <div class="expertise-card animate-on-scroll">
+            <div class="expertise-icon">
+              <i class="fas fa-search"></i>
+            </div>
+            <h3 class="expertise-name">Pesquisa de Usuário</h3>
+            <p class="expertise-description">
+              Condução de entrevistas, testes de usabilidade e análise de
+              feedback para informar decisões de design baseadas em dados.
+            </p>
+          </div>
+
+          <!-- Expertise 6: Prototipagem -->
+          <div class="expertise-card animate-on-scroll">
+            <div class="expertise-icon">
+              <i class="fas fa-code-branch"></i>
+            </div>
+            <h3 class="expertise-name">Prototipagem</h3>
+            <p class="expertise-description">
+              Desenvolvimento de protótipos interativos para validar conceitos,
+              testar hipóteses e comunicar soluções de design.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section class="section contact-section">
+      <div class="container">
+        <div class="contact-container">
+          <h2 class="contact-title">Obrigado pela visita!</h2>
+          <div class="social-links">
+            <a
+              href="https://linkedin.com/in/seuperfil"
+              target="_blank"
+              rel="noopener"
+              class="social-link"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a
+              href="https://instagram.com/seuperfil"
+              target="_blank"
+              rel="noopener"
+              class="social-link"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a
+              href="https://dribbble.com/seuperfil"
+              target="_blank"
+              rel="noopener"
+              class="social-link"
+            >
+              <i class="fab fa-dribbble"></i>
+            </a>
+          </div>
+          <p class="contact-text">
+            Tem algum projeto em mente? Vamos conversar!
+          </p>
+
+          <form class="contact-form">
+            <div class="field">
+              <div class="control">
+                <input class="input" type="text" placeholder="Nome" />
+              </div>
+            </div>
+
+            <div class="field">
+              <div class="control">
+                <input class="input" type="email" placeholder="Email" />
+              </div>
+            </div>
+
+            <div class="field">
+              <div class="control">
+                <textarea class="textarea" placeholder="Mensagem"></textarea>
+              </div>
+            </div>
+
+            <div class="field">
+              <div class="control">
+                <button class="button is-primary submit-button">Enviar</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="columns">
+            <div class="column is-6">
+              <p class="footer-title">Seu Nome Portfolio</p>
+            </div>
+            <div class="column is-6">
+              <div class="social-links is-pulled-right">
+                <a
+                  href="https://linkedin.com/in/seuperfil"
+                  target="_blank"
+                  rel="noopener"
+                  class="social-link"
+                >
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a
+                  href="https://instagram.com/seuperfil"
+                  target="_blank"
+                  rel="noopener"
+                  class="social-link"
+                >
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a
+                  href="https://dribbble.com/seuperfil"
+                  target="_blank"
+                  rel="noopener"
+                  class="social-link"
+                >
+                  <i class="fab fa-dribbble"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <hr class="footer-divider" />
+          <div class="columns footer-bottom">
+            <div class="column is-6">
+              <p class="copyright">
+                © 2025 Seu Nome. Todos os direitos reservados.
+              </p>
+            </div>
+            <div class="column is-6">
+              <p class="contact-email is-pulled-right">
+                Contato: seu.email@exemplo.com
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/client-carousel.js"></script>
+  </body>
+</html>
