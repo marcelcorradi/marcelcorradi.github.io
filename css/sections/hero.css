@@ -1,0 +1,63 @@
+/* 
+ * SEÇÕES: HERO
+ * Estilos para a seção hero da página inicial
+ */
+
+ .hero.is-white {
+    background-color: white;
+}
+
+.hero.is-fullheight-with-navbar {
+    min-height: calc(100vh - 80px);
+    padding-top: 80px;
+}
+
+.hero-body {
+    padding: var(--spacing-4xl) 0;
+}
+
+.hero-name {
+    font-size: 3.5rem;
+    font-weight: var(--font-weight-bold);
+    line-height: 1.1;
+    margin-bottom: var(--spacing-lg);
+    color: var(--color-neutral-900);
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    font-weight: var(--font-weight-medium);
+    color: var(--color-neutral-800);
+    margin-bottom: var(--spacing-lg);
+}
+
+.hero-description {
+    font-size: 1.125rem;
+    font-weight: var(--font-weight-medium);
+    color: var(--color-neutral-700);
+    max-width: 500px;
+    line-height: var(--line-height-normal);
+    margin-bottom: var(--spacing-lg);
+}
+
+.hero-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.hero-image {
+    width: 320px;
+    height: 320px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}

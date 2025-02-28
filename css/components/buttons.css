@@ -1,0 +1,97 @@
+/* 
+ * COMPONENTES: BUTTONS
+ * Estilos para botões e elementos clicáveis
+ */
+
+/* Sobrescrevendo variáveis do Bulma com nosso sistema de tokens */
+.button.is-primary {
+    background-color: var(--color-primary-500);
+}
+
+.button.is-primary:hover {
+    background-color: var(--color-primary-600);
+}
+
+.submit-button {
+    height: 48px;
+    font-weight: var(--font-weight-medium);
+    border-radius: var(--border-radius-md);
+    transition: all 0.3s ease;
+}
+
+.submit-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 102, 255, 0.2);
+}
+
+/* Links estilizados */
+.hero-scroll-link {
+    display: inline-flex;
+    align-items: center;
+    font-weight: var(--font-weight-medium);
+    color: var(--color-primary-500);
+    text-decoration: none;
+    padding-bottom: 2px;
+    border-bottom: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.hero-scroll-link:hover {
+    color: var(--color-primary-600);
+    border-bottom-color: var(--color-primary-500);
+}
+
+.hero-scroll-link .icon {
+    margin-left: var(--spacing-xs);
+}
+
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    font-size: 0.875rem;
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-primary-500);
+    padding: var(--spacing-xs) 0;
+    border-bottom: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.project-link:hover {
+    color: var(--color-primary-600);
+    border-bottom-color: var(--color-primary-500);
+}
+
+.project-link .icon {
+    margin-left: var(--spacing-xs);
+    transition: transform 0.3s ease;
+}
+
+.project-link:hover .icon {
+    transform: translateX(3px);
+}
+
+/* Social links */
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: var(--color-neutral-200);
+    color: var(--color-neutral-800);
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    background-color: var(--color-primary-500);
+    color: white;
+    transform: translateY(-2px);
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-xl);
+}

@@ -1,0 +1,87 @@
+/* 
+ * SEÇÕES: CLIENTS
+ * Estilos para a seção de clientes da página inicial
+ */
+
+ .clients-section {
+    padding: var(--spacing-5x1) 0;
+    background-color: white;
+    border-top: 1px solid var(--color-neutral-200);
+}
+
+.clients-title {
+    font-size: 2rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-neutral-900);
+    margin-bottom: var(--spacing-md);
+    text-align: center;
+}
+
+.clients-subtitle {
+    font-size: 1.125rem;
+    color: var(--color-neutral-700);
+    margin-bottom: var(--spacing-3xl);
+    text-align: center;
+}
+
+.client-logos-container {
+    position: relative;
+    padding: 0 var(--spacing-lg);
+    overflow: hidden;
+}
+
+.client-logos-carousel {
+    display: flex;
+    gap: var(--spacing-2xl);
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: var(--spacing-xl) 0;
+}
+
+.client-logo {
+    flex: 0 0 170px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.7;
+    transition: all 0.3s ease;
+    padding: var(--spacing-md);
+}
+
+.client-logo:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.client-logo img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.client-logo:hover img {
+    filter: grayscale(0%);
+}
+
+/* Versão com animação automática (opcional) */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-170px * 3));
+    }
+}
+
+.client-logos-carousel {
+    animation: scroll 20s linear infinite;
+    width: calc(170px * 12);
+}
+
+.client-logos-container:hover .client-logos-carousel {
+    animation-play-state: paused;
+}

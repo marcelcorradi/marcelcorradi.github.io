@@ -1,0 +1,38 @@
+/* 
+ * COMPONENTES: NAVBAR
+ * Estilos para a barra de navegação
+ */
+
+/* Componente Logo */
+.logo-square {
+    width: 24px;
+    height: 24px;
+    background-color: var(--color-neutral-900);
+    border-radius: 4px;
+}
+
+/* Navegação */
+.navbar {
+    background-color: rgba(255, 255, 255, 0.97);
+    height: 80px;
+    padding: var(--spacing-md) 0;
+    box-shadow: 0 2px 3px rgba(10, 10, 10, 0.05);
+}
+
+.navbar.is-scrolled {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.navbar-item {
+    font-weight: var(--font-weight-medium);
+    color: var(--color-neutral-800);
+    transition: color var(--transition-normal);
+    padding: 0 var(--spacing-lg);
+    margin: 0 var(--spacing-xs);
+}
+
+.navbar-item:hover,
+.navbar-item.is-active {
+    background-color: transparent;
+    color: var(--color-neutral-900);
+}

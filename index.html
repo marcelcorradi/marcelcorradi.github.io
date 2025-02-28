@@ -67,11 +67,47 @@
       </div>
     </nav>
 
-    <!-- Seção Hero -->
+    <!-- Seção Hero com classes corretas do Bulma -->
     <section class="hero is-white is-fullheight-with-navbar">
       <div class="hero-body">
         <div class="container">
-          <div class="columns is-vcentered">
+          <!-- Versão móvel (só aparece em mobile) -->
+          <div class="columns is-hidden-tablet">
+            <!-- Imagem primeiro -->
+            <div class="column is-12">
+              <div class="hero-image-container">
+                <figure class="hero-image">
+                  <img
+                    src="img/profile-photo.jpg"
+                    alt="Marcel Corradi - Product Designer"
+                  />
+                </figure>
+              </div>
+            </div>
+            <!-- Texto depois -->
+            <div class="column is-12">
+              <h1 class="title hero-name">Marcel<br />Corradi</h1>
+              <p class="subtitle hero-subtitle">
+                Product Designer especializado em Design Systems
+              </p>
+              <p class="hero-description">
+                Transformo complexidade em sistemas escaláveis e coesos que
+                capacitam equipes a criar produtos digitais consistentes e
+                centrados no usuário.
+              </p>
+              <div class="mt-5">
+                <a href="#projects" class="hero-scroll-link">
+                  Conheça meu trabalho
+                  <span class="icon">
+                    <i class="fas fa-arrow-down"></i>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Versão desktop (só aparece em tablet e acima) -->
+          <div class="columns is-vcentered is-hidden-mobile">
             <div class="column is-5">
               <h1 class="title hero-name">Marcel<br />Corradi</h1>
               <p class="subtitle hero-subtitle">
@@ -127,9 +163,9 @@
                   />
                 </div>
               </div>
-              <div class="column is-6 is-offset-1">
+              <div class="column">
                 <div class="project-content">
-                  <div class="project-category">DESIGN SYSTEM</div>
+                  <div class="project-category">Design System</div>
                   <h3 class="project-title">
                     Criação e escalabilidade de um sistema de design
                   </h3>
@@ -162,9 +198,9 @@
                   />
                 </div>
               </div>
-              <div class="column is-6 is-offset-1">
+              <div class="column">
                 <div class="project-content">
-                  <div class="project-category">PRODUCT DESIGN</div>
+                  <div class="project-category">Product Design</div>
                   <h3 class="project-title">
                     Redesign de experiência para e-commerce B2B
                   </h3>
@@ -197,9 +233,9 @@
                   />
                 </div>
               </div>
-              <div class="column is-6 is-offset-1">
+              <div class="column">
                 <div class="project-content">
-                  <div class="project-category">UX/UI DESIGN</div>
+                  <div class="project-category">UX/UI Design</div>
                   <h3 class="project-title">
                     App de saúde focado em acessibilidade e engajamento
                   </h3>

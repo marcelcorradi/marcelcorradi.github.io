@@ -1,0 +1,27 @@
+/* 
+ * SEÇÕES: CONTACT
+ * Estilos para a seção de contato da página inicial
+ */
+
+ .contact-section {
+    padding: var(--spacing-5xl) 0;
+    background-color: white;
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-title {
+    font-size: 2rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-neutral-900);
+    margin-bottom: var(--spacing-xl);
+}
+
+.contact-text {
+    margin-bottom: var(--spacing-xl);
+    color: var(--color-neutral-700);
+}

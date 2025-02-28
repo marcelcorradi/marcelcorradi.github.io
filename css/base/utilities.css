@@ -1,0 +1,58 @@
+/* 
+ * BASE: UTILIDADES
+ * Classes utilitárias que complementam o Bulma
+ */
+
+/* Classes de utilidade para cores */
+.has-bg-primary { background-color: var(--color-primary-500); }
+.has-bg-light { background-color: var(--color-neutral-100); }
+.has-bg-surface { background-color: var(--color-surface); }
+
+.has-text-primary { color: var(--color-primary-500); }
+.has-text-muted { color: var(--color-text-muted); }
+
+/* Classes utilitárias para tipografia que complementam as do Bulma */
+.is-text-xs { font-size: var(--font-size-xs); }
+.is-text-sm { font-size: var(--font-size-sm); }
+.is-text-md { font-size: var(--font-size-md); }
+.is-text-lg { font-size: var(--font-size-lg); }
+.is-text-xl { font-size: var(--font-size-xl); }
+
+.has-text-weight-regular { font-weight: var(--font-weight-regular); }
+.has-text-weight-medium { font-weight: var(--font-weight-medium); }
+.has-text-weight-semibold { font-weight: var(--font-weight-semibold); }
+.has-text-weight-bold { font-weight: var(--font-weight-bold); }
+
+.has-line-height-tight { line-height: var(--line-height-tight); }
+.has-line-height-normal { line-height: var(--line-height-normal); }
+.has-line-height-loose { line-height: var(--line-height-loose); }
+
+/* Classes utilitárias para espaçamento que complementam as do Bulma */
+.has-margin-2xs { margin: var(--spacing-2xs); }
+.has-margin-xs { margin: var(--spacing-xs); }
+.has-margin-sm { margin: var(--spacing-sm); }
+.has-margin-md { margin: var(--spacing-md); }
+.has-margin-lg { margin: var(--spacing-lg); }
+.has-margin-xl { margin: var(--spacing-xl); }
+.has-margin-2xl { margin: var(--spacing-2xl); }
+.has-margin-3xl { margin: var(--spacing-3xl); }
+
+.has-padding-2xs { padding: var(--spacing-2xs); }
+.has-padding-xs { padding: var(--spacing-xs); }
+.has-padding-sm { padding: var(--spacing-sm); }
+.has-padding-md { padding: var(--spacing-md); }
+.has-padding-lg { padding: var(--spacing-lg); }
+.has-padding-xl { padding: var(--spacing-xl); }
+.has-padding-2xl { padding: var(--spacing-2xl); }
+.has-padding-3xl { padding: var(--spacing-3xl); }
+
+/* Classes utilitárias para bordas e sombras */
+.has-radius-sm { border-radius: var(--border-radius-sm); }
+.has-radius-md { border-radius: var(--border-radius-md); }
+.has-radius-lg { border-radius: var(--border-radius-lg); }
+.has-radius-pill { border-radius: var(--border-radius-pill); }
+
+.has-shadow-sm { box-shadow: var(--shadow-sm); }
+.has-shadow-md { box-shadow: var(--shadow-md); }
+.has-shadow-lg { box-shadow: var(--shadow-lg); }
+.has-shadow-xl { box-shadow: var(--shadow-xl); }

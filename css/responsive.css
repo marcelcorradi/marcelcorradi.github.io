@@ -1,0 +1,219 @@
+/* 
+ * RESPONSIVIDADE
+ * Media queries para ajustar o layout em diferentes tamanhos de tela
+ */
+
+/* Telas grandes (desktops, 1200px e acima) */
+@media screen and (min-width: 1200px) {
+    /* Ajustes específicos para telas muito grandes, se necessário */
+}
+
+/* Telas médias a grandes (notebooks, entre 1024px e 1199px) */
+@media screen and (max-width: 1199px) and (min-width: 1024px) {
+    /* Ajustes específicos para esta faixa */
+}
+
+/* Telas médias (tablets na horizontal, até 1023px) */
+@media screen and (max-width: 1023px) {
+    .hero-name {
+        font-size: 3rem;
+    }
+    
+    .hero-body {
+        padding: var(--spacing-3xl) 0;
+    }
+    
+    /* Correção para os cards de projeto */
+    .project-card .columns {
+        flex-direction: column;
+    }
+    
+    .project-card .column {
+        width: 100%;
+        margin-left: 0 !important;
+        padding: 0.75rem 0;
+    }
+    
+    .project-image-container {
+        margin-bottom: var(--spacing-lg);
+        padding-bottom: 60%; /* Ajustando a proporção para mobile */
+    }
+    
+    .project-content {
+        padding: 0;
+    }
+    
+    .expertise-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Telas pequenas a médias (tablets na vertical, até 768px) */
+@media screen and (max-width: 768px) {
+    .navbar-menu {
+        background-color: white;
+        box-shadow: 0 8px 16px rgba(10, 10, 10, 0.1);
+    }
+    
+    .navbar-menu.is-active {
+        display: block;
+    }
+    
+    .hero-body {
+        padding: var(--spacing-2xl) 0;
+    }
+    
+    /* AQUI ESTÁ A CORREÇÃO: Mudamos de column-reverse para column 
+       para permitir que as classes order-X-mobile do Bulma funcionem */
+    .columns.is-vcentered {
+        flex-direction: column;
+    }
+    
+    .hero-image {
+        margin-bottom: var(--spacing-2xl);
+    }
+    
+    .hero-name {
+        font-size: 2.5rem;
+        font-size: var(--font-size-h1);
+        margin-bottom: var(--spacing-md);
+    }
+    
+    .hero-subtitle {
+        font-size: 1.25rem;
+    }
+    
+    /* Ajuste para o card de projeto em telas menores */
+    .project-card {
+        padding: var(--spacing-md);
+    }
+    
+    .project-title {
+        font-size: 1.25rem !important;
+    }
+    
+    .project-description {
+        font-size: 0.95rem;
+    }
+    
+    /* Ajuste das seções */
+    .projects-section,
+    .contact-section,
+    .expertise-section,
+    .clients-section,
+    .about-section,
+    .contact-page-section {
+        padding: var(--spacing-3xl) 0;
+    }
+    
+    .projects-title,
+    .contact-title,
+    .clients-title,
+    .expertise-title {
+        font-size: 1.75rem;
+    }
+    
+    .footer-content .columns {
+        margin-bottom: 0;
+    }
+    
+    .footer-content .column {
+        padding-bottom: var(--spacing-xs);
+    }
+    
+    .social-links.is-pulled-right {
+        float: none;
+        margin-top: var(--spacing-sm);
+        justify-content: flex-start;
+    }
+    
+    .contact-email.is-pulled-right {
+        float: none;
+        margin-top: var(--spacing-xs);
+    }
+    
+    .client-logo {
+        flex: 0 0 120px;
+        height: 60px;
+    }
+    
+    .client-logos-carousel {
+        gap: var(--spacing-lg);
+    }
+    
+    .expertise-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .expertise-card {
+        padding: var(--spacing-xl);
+    }
+    
+    /* Ajustes para a página Sobre */
+    .about-title {
+        font-size: 2rem;
+    }
+    
+    .about-image {
+        margin-bottom: var(--spacing-xl);
+    }
+    
+    .about-text {
+        font-size: 1rem;
+    }
+    
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Ajustes para a página de Contato */
+    .contact-page-title {
+        font-size: 2rem;
+    }
+    
+    .contact-page-subtitle {
+        font-size: 1.125rem;
+    }
+}
+
+/* Telas muito pequenas (smartphones, até 480px) */
+@media screen and (max-width: 480px) {
+    .hero-name {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.125rem;
+    }
+    
+    .hero-description {
+        font-size: 1rem;
+    }
+    
+    .hero-image {
+        width: 240px;
+        height: 240px;
+    }
+    
+    /* Ajustes adicionais para smartphones */
+    .project-card {
+        padding: var(--spacing-md);
+    }
+    
+    .project-category {
+        font-size: 0.7rem;
+    }
+    
+    .project-content .project-title {
+        font-size: 1.25rem;
+        margin-bottom: var(--spacing-sm);
+    }
+    
+    .project-image-container {
+        padding-bottom: 56%; /* Proporção 16:9 para economizar espaço vertical */
+    }
+    
+    .timeline-role {
+        font-size: 1.125rem;
+    }
+}

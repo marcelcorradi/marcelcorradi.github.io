@@ -1,0 +1,74 @@
+/* 
+ * SEÇÕES: CONTACT PAGE
+ * Estilos para a página de Contato
+ */
+
+ .contact-page-section {
+    padding: var(--spacing-5xl) 0;
+    background-color: white;
+}
+
+.contact-page-title {
+    font-size: 2.5rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-neutral-900);
+    margin-bottom: var(--spacing-md);
+}
+
+.contact-page-subtitle {
+    font-size: 1.25rem;
+    color: var(--color-neutral-700);
+    margin-bottom: var(--spacing-3xl);
+    max-width: 600px;
+}
+
+.contact-info {
+    margin-bottom: var(--spacing-2xl);
+}
+
+.contact-info-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: var(--spacing-lg);
+}
+
+.contact-info-icon {
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background-color: var(--color-primary-100);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-primary-500);
+    font-size: 1.25rem;
+    margin-right: var(--spacing-md);
+}
+
+.contact-info-content {
+    flex-grow: 1;
+}
+
+.contact-info-title {
+    font-size: 1.125rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-neutral-900);
+    margin-bottom: var(--spacing-xs);
+}
+
+.contact-info-text {
+    color: var(--color-neutral-700);
+    line-height: var(--line-height-normal);
+}
+
+.contact-info-text a {
+    color: var(--color-primary-500);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-info-text a:hover {
+    color: var(--color-primary-600);
+    text-decoration: underline;
+}

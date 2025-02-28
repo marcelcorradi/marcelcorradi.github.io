@@ -1,0 +1,45 @@
+/* 
+ * COMPONENTES: FORMS
+ * Estilos para formulários e elementos de input
+ */
+
+ .contact-form {
+    text-align: left;
+}
+
+.contact-form .field {
+    margin-bottom: var(--spacing-md);
+}
+
+.contact-form .input,
+.contact-form .textarea {
+    border-color: var(--color-neutral-300);
+    background-color: white;
+    box-shadow: none;
+    transition: all 0.3s ease;
+    border-radius: var(--border-radius-md);
+}
+
+.contact-form .input:focus,
+.contact-form .textarea:focus {
+    border-color: var(--color-primary-500);
+    box-shadow: 0 0 0 1px rgba(0, 102, 255, 0.1);
+}
+
+.contact-form .textarea {
+    min-height: 120px;
+}
+
+/* Formulário da página de contato */
+.contact-page-form-container {
+    background-color: var(--color-neutral-100);
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-2xl);
+}
+
+.contact-page-form-title {
+    font-size: 1.5rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-neutral-900);
+    margin-bottom: var(--spacing-lg);
+}
