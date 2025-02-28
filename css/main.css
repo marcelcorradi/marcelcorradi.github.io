@@ -3,13 +3,19 @@
  * Estende o Bulma e aplica os tokens de design
  */
 
+ /* @import "css/tokens/typography.css"; */
+/* @import "css/tokens/spacing.css"; */
+/* @import "css/tokens/colors.css"; */
+
 /* Sobrescrevendo variáveis do Bulma com nosso sistema de tokens */
+
 .button.is-primary {
     background-color: var(--color-primary-500) !important;
 }
 
 .button.is-primary:hover {
     background-color: var(--color-primary-600) !important;
+    background-color: var(--color) !important;
 }
 
 /* Reset e estilos globais */
@@ -91,6 +97,7 @@ body {
 
 .hero-description {
     font-size: 1.125rem;
+    font-weight: var(--font-weight-medium);
     color: var(--color-neutral-700);
     max-width: 500px;
     line-height: var(--line-height-normal);
@@ -444,6 +451,7 @@ body {
     
     .hero-name {
         font-size: 2.5rem !important;
+        font-size: var(--font-size-h1);
         margin-bottom: var(--spacing-md) !important;
     }
     
