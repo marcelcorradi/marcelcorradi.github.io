@@ -13,6 +13,7 @@
 @import "components/forms.css";
 @import "components/navbar.css";
 @import "components/footer.css";
+@import "components/profile-image.css";
 
 /* Seções */
 @import "sections/hero.css";

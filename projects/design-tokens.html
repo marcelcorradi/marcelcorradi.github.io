@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Design Tokens | Marcel Corradi - Product Designer</title>
+
+    <!-- Fonte Inter do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bulma CSS Framework -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+
+    <!-- Font Awesome para ícones -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="../css/tokens/colors.css" />
+    <link rel="stylesheet" href="../css/tokens/typography.css" />
+    <link rel="stylesheet" href="../css/tokens/spacing.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body>
+    <!-- Navegação -->
+    <nav
+      class="navbar is-white is-fixed-top"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div class="container">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="../">
+            <div class="logo-square"></div>
+          </a>
+
+          <a
+            role="button"
+            class="navbar-burger"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="navbarBasic"
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+
+        <div id="navbarBasic" class="navbar-menu">
+          <div class="navbar-end">
+            <a class="navbar-item is-active" href="../index.html"> Trabalhos </a>
+            <a class="navbar-item" href="../about.html"> Sobre </a>
+            <a class="navbar-item" href="../contact.html"> Contato </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero do Projeto -->
+    <section class="section" style="padding-top: var(--spacing-5xl);">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-8 is-offset-2">
+            <nav class="breadcrumb" aria-label="breadcrumbs">
+              <ul>
+                <li><a href="../index.html">Trabalhos</a></li>
+                <li class="is-active"><a href="#" aria-current="page">Design Tokens: Nomenclatura e Implementação</a></li>
+              </ul>
+            </nav>
+            
+            <h1 class="title is-2 has-text-weight-bold mt-5 animate-on-scroll">
+              Design Tokens: Convenção de nomenclatura e Implementação no Figma
+            </h1>
+            
+            <div class="tags mt-4">
+              <span class="tag is-medium">Design System</span>
+              <span class="tag is-medium">Design Tokens</span>
+              <span class="tag is-medium">Padronização</span>
+              <span class="tag is-medium">Figma</span>
+            </div>
+            
+            <div class="project-image-container mt-5 animate-on-scroll">
+              <img src="../img/projects/design-tokens-hero.jpg" alt="Design Tokens - Hierarquia e visualização" style="border-radius: var(--border-radius-lg); width: 100%;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Visão Geral do Projeto -->
+    <section class="section">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-8 is-offset-2">
+            <div class="content animate-on-scroll">
+              <h2 class="title is-3">Visão Geral</h2>
+              <p class="is-size-5">
+                Este projeto envolveu a criação e implementação de um sistema de Design Tokens padronizado, estabelecendo uma linguagem de design consistente e escalável. Os tokens são "apelidos para elementos de design" que facilitam a manutenção, garantem a consistência visual e melhoram a comunicação entre design e desenvolvimento.
+              </p>
+
+              <div class="columns mt-5 mb-5">
+                <div class="column is-4">
+                  <div class="has-text-weight-bold is-size-5 mb-2">Meu papel</div>
+                  <p>Product Designer<br>Arquiteto de Design System</p>
+                </div>
+                <div class="column is-4">
+                  <div class="has-text-weight-bold is-size-5 mb-2">Duração</div>
+                  <p>3 meses</p>
+                </div>
+                <div class="column is-4">
+                  <div class="has-text-weight-bold is-size-5 mb-2">Entregáveis</div>
+                  <p>Sistema de nomenclatura<br>Documentação<br>Implementação no Figma</p>
+                </div>
+              </div>
+              
+              <h2 class="title is-3 mt-6">O Desafio</h2>
+              <div class="columns">
+                <div class="column">
+                  <p class="is-size-5">
+                    O time de design enfrentava problemas recorrentes que impactavam a produtividade e a qualidade dos produtos:
+                  </p>
+                  <ul class="is-size-5">
+                    <li><strong>Retrabalho constante</strong> na aplicação de estilos e propriedades visuais</li>
+                    <li><strong>Inconsistência visual</strong> entre diferentes telas e produtos</li>
+                    <li><strong>Dificuldade de manutenção</strong> quando mudanças precisavam ser propagadas</li>
+                    <li><strong>Desalinhamento entre times</strong> de design e desenvolvimento</li>
+                  </ul>
+                  <p class="is-size-5 mt-4">
+                    Como o próprio projeto aponta: <em>"Sem padrões, cada tela é uma decisão nova, cada ajuste é um retrabalho."</em>
+                  </p>
+                </div>
+                <div class="column">
+                  <figure class="image">
+                    <img src="../img/projects/design-tokens-challenge.jpg" alt="Ilustração do desafio - comparação entre blocos de lego desorganizados e organizados" style="border-radius: var(--border-radius-lg);">
+                  </figure>
+                </div>
+              </div>
+              
+              <h2 class="title is-3 mt-6">A Abordagem</h2>
+              <p class="is-size-5">
+                A solução desenvolvida foi uma nomenclatura padronizada para tokens, seguida de sua implementação. Isso garante consistência, organização e eficiência no Design System.
+              </p>
+              <p class="is-size-5">
+                Organizamos a hierarquia em três camadas distintas, criando uma estrutura clara e lógica:
+              </p>
+              
+              <div class="box has-background-white-bis mt-5" style="border-radius: var(--border-radius-lg);">
+                <figure class="image">
+                  <img src="../img/projects/design-tokens-hierarchy.jpg" alt="Hierarquia de Design Tokens" style="border-radius: var(--border-radius-md);">
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Processo e Solução -->
+    <section class="section has-background-white-bis">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-8 is-offset-2">
+            <div class="content animate-on-scroll">
+              <h2 class="title is-3">A Solução: Estrutura em Três Camadas</h2>
+              
+              <!-- Raw Values -->
+              <div class="box p-5 mb-6 has-background-white" style="border-radius: var(--border-radius-lg);">
+                <h3 class="title is-4 has-text-primary">1. Raw Values</h3>
+                <p class="is-size-5">
+                  São os valores em sua forma mais básica e pura, incluindo códigos hexadecimais de cores, valores numéricos de tamanho, espessuras de fonte e outros valores absolutos. São a base sobre a qual as demais camadas de tokens são construídas.
+                </p>
+                
+                <div class="columns mt-4">
+                  <div class="column">
+                    <strong class="is-block mb-2">Exemplos:</strong>
+                    <div class="tags">
+                      <span class="tag">#000000</span>
+                      <span class="tag">16px</span>
+                      <span class="tag">Open Sans</span>
+                    </div>
+                  </div>
+                  <div class="column is-narrow">
+                    <figure class="image is-128x128">
+                      <img src="../img/projects/raw-values.jpg" alt="Raw Values">
+                    </figure>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Global Tokens -->
+              <div class="box p-5 mb-6 has-background-white" style="border-radius: var(--border-radius-lg);">
+                <h3 class="title is-4 has-text-primary">2. Global Tokens</h3>
+                <p class="is-size-5">
+                  Representam a primeira camada de abstração do sistema, transformando valores brutos em tokens reutilizáveis e com significado mais amplo. Estes tokens estabelecem um vocabulário consistente para propriedades visuais comuns, como paletas de cores, escalas tipográficas e sistemas de espaçamento.
+                </p>
+                
+                <h4 class="title is-5 mt-4">Estrutura:</h4>
+                <div class="columns is-multiline">
+                  <div class="column is-6">
+                    <div class="notification has-background-white-bis p-4">
+                      <strong>Categoria</strong>
+                      <p class="is-size-6 mt-2 mb-1">Definem o tipo de propriedade</p>
+                      <small>Exemplos: font-size, global-color, spacing</small>
+                    </div>
+                  </div>
+                  <div class="column is-6">
+                    <div class="notification has-background-white-bis p-4">
+                      <strong>Sub-categoria</strong>
+                      <p class="is-size-6 mt-2 mb-1">Agrupa valores com características similares</p>
+                      <small>Exemplos: primary, informative, success</small>
+                    </div>
+                  </div>
+                  <div class="column is-6">
+                    <div class="notification has-background-white-bis p-4">
+                      <strong>Escala</strong>
+                      <p class="is-size-6 mt-2 mb-1">Sistema de graduação que indica a intensidade ou tamanho</p>
+                      <small>Exemplos: 100, 200, 300... | xs, md, lg</small>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="box has-background-white-bis mt-4">
+                  <p class="is-size-6 has-text-weight-bold mb-2">Exemplos de Global Tokens:</p>
+                  <div class="tags">
+                    <span class="tag is-medium">$font-size-md</span>
+                    <span class="tag is-medium">$spacing-2xl</span>
+                    <span class="tag is-medium">$core-colors-esfera-200</span>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Semantic Tokens -->
+              <div class="box p-5 mb-6 has-background-white" style="border-radius: var(--border-radius-lg);">
+                <h3 class="title is-4 has-text-primary">3. Semantic Tokens</h3>
+                <p class="is-size-5">
+                  São a camada mais refinada e contextual do sistema, traduzindo tokens globais em aplicações específicas de design. Eles comunicam claramente a função e o contexto de uso de cada token, facilitando sua aplicação consistente em diferentes situações.
+                </p>
+                
+                <h4 class="title is-5 mt-4">Estrutura:</h4>
+                <div class="columns is-multiline">
+                  <div class="column is-6">
+                    <div class="notification has-background-white-bis p-4">
+                      <strong>Tipo do token</strong>
+                      <p class="is-size-6 mt-2 mb-1">Propriedade visual específica que o token representa</p>
+                      <small>Exemplos: color, typography, spacing</small>
+                    </div>
+                  </div>
+                  <div class="column is-6">
+                    <div class="notification has-background-white-bis p-4">
+                      <strong>Categoria</strong>
+                      <p class="is-size-6 mt-2 mb-1">Define o escopo de aplicação do token no sistema</p>
+                      <small>Exemplos: content, layout, interactive</small>
+                    </div>
+                  </div>
+                  <div class="column is-6">
+                    <div class="notification has-background-white-bis p-4">
+                      <strong>Contexto</strong>
+                      <p class="is-size-6 mt-2 mb-1">Especifica a função do token dentro da sua categoria</p>
+                      <small>Exemplos: heading-page, primary, brand</small>
+                    </div>
+                  </div>
+                  <div class="column is-6">
+                    <div class="notification has-background-white-bis p-4">
+                      <strong>Variação</strong>
+                      <p class="is-size-6 mt-2 mb-1">Modificadores opcionais que indicam estados ou variantes</p>
+                      <small>Exemplos: hover, pressed, alternative</small>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="box has-background-white-bis mt-4">
+                  <p class="is-size-6 has-text-weight-bold mb-2">Exemplos de Semantic Tokens:</p>
+                  <div class="tags">
+                    <span class="tag is-medium">$typography-body-large-bold</span>
+                    <span class="tag is-medium">$spacing-vertical-heading-to-content</span>
+                    <span class="tag is-medium">$color-interactive-primary-hover</span>
+                  </div>
+                </div>
+              </div>
+              
+              <h2 class="title is-3 mt-6">Implementação no Figma</h2>
+              <p class="is-size-5">
+                A implementação deste sistema de tokens no Figma permitiu:
+              </p>
+              <ul class="is-size-5">
+                <li>Criação de variáveis de design organizadas segundo a nomenclatura padronizada</li>
+                <li>Facilidade de manutenção e atualização centralizada</li>
+                <li>Melhor documentação das escolhas de design</li>
+                <li>Integração mais fluida entre design e desenvolvimento através de ferramentas de exportação de tokens</li>
+              </ul>
+              
+              <figure class="image mt-5">
+                <img src="../img/projects/design-tokens-implementation.jpg" alt="Implementação de Design Tokens no Figma" style="border-radius: var(--border-radius-lg);">
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resultados -->
+    <section class="section">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-8 is-offset-2">
+            <div class="content animate-on-scroll">
+              <h2 class="title is-3">Resultados</h2>
+              
+              <div class="columns has-text-centered">
+                <div class="column">
+                  <div class="box p-5 has-background-white" style="height: 100%; border-radius: var(--border-radius-lg);">
+                    <span class="icon is-large has-text-success mb-3">
+                      <i class="fas fa-check-square fa-2x"></i>
+                    </span>
+                    <h3 class="title is-4">Redução de Erros</h3>
+                    <p>Diminuição significativa de inconsistências e erros no design graças à padronização</p>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="box p-5 has-background-white" style="height: 100%; border-radius: var(--border-radius-lg);">
+                    <span class="icon is-large has-text-primary mb-3">
+                      <i class="fas fa-rocket fa-2x"></i>
+                    </span>
+                    <h3 class="title is-4">Aceleração do Processo</h3>
+                    <p>Redução de 40% no tempo necessário para criar e manter designs consistentes</p>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="box p-5 has-background-white" style="height: 100%; border-radius: var(--border-radius-lg);">
+                    <span class="icon is-large has-text-info mb-3">
+                      <i class="fas fa-palette fa-2x"></i>
+                    </span>
+                    <h3 class="title is-4">Consistência Visual</h3>
+                    <p>Garantia de uma experiência de usuário coesa em todos os produtos da empresa</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="box has-background-light p-5 mt-6" style="border-radius: var(--border-radius-lg);">
+                <h3 class="title is-4">Aprendizados</h3>
+                <p class="is-size-5">
+                  Este projeto demonstrou a importância de ter uma estrutura clara e padronizada para os elementos de design. Os principais aprendizados incluem:
+                </p>
+                <ul class="is-size-5 mt-3">
+                  <li>A importância de uma nomenclatura consistente e intuitiva</li>
+                  <li>O valor de estabelecer uma hierarquia clara entre os diferentes níveis de tokens</li>
+                  <li>A necessidade de documentação adequada para garantir a adoção por toda a equipe</li>
+                  <li>O impacto positivo na colaboração entre designers e desenvolvedores</li>
+                </ul>
+              </div>
+              
+              <div class="has-text-centered mt-6">
+                <a href="../index.html" class="button is-primary is-medium">
+                  <span class="icon">
+                    <i class="fas fa-arrow-left"></i>
+                  </span>
+                  <span>Voltar para Trabalhos</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="columns">
+            <div class="column is-6">
+              <p class="footer-title">Marcel Corradi Portfolio</p>
+            </div>
+            <div class="column is-6">
+              <div class="social-links is-pulled-right">
+                <a
+                  href="https://www.linkedin.com/in/marcel-corradi-84b26931/"
+                  target="_blank"
+                  rel="noopener"
+                  class="social-link"
+                >
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <hr class="footer-divider" />
+          <div class="columns footer-bottom">
+            <div class="column is-6">
+              <p class="copyright">
+                © 2025 Marcel Corradi. Todos os direitos reservados.
+              </p>
+            </div>
+            <div class="column is-6">
+              <p class="contact-email is-pulled-right">
+                Contato: contato@marcelcorradi.com.br
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../js/main.js"></script>
+  </body>
+</html>

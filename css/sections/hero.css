@@ -39,7 +39,7 @@
     line-height: var(--line-height-normal);
     margin-bottom: var(--spacing-lg);
 }
-
+/*
 .hero-image-container {
     display: flex;
     justify-content: center;
@@ -61,3 +61,4 @@
     object-fit: cover;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
+*/

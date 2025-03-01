@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato | Marcel Corradi - Product Designer</title>
+
+    <!-- Fonte Inter do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bulma CSS Framework -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+
+    <!-- Font Awesome para ícones -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="css/tokens/colors.css" />
+    <link rel="stylesheet" href="css/tokens/typography.css" />
+    <link rel="stylesheet" href="css/tokens/spacing.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <!-- Navegação -->
+    <nav
+      class="navbar is-white is-fixed-top"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div class="container">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="/">
+            <div class="logo-square"></div>
+          </a>
+
+          <a
+            role="button"
+            class="navbar-burger"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="navbarBasic"
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+
+        <div id="navbarBasic" class="navbar-menu">
+          <div class="navbar-end">
+            <a class="navbar-item" href="index.html"> Trabalhos </a>
+            <a class="navbar-item" href="about.html"> Sobre </a>
+            <a class="navbar-item is-active" href="contact.html"> Contato </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Seção de Contato -->
+    <section class="section contact-page-section">
+      <div class="container">
+        <div class="columns is-multiline">
+          <div class="column is-12">
+            <h1 class="contact-page-title animate-on-scroll">
+              Vamos Conversar
+            </h1>
+            <p class="contact-page-subtitle animate-on-scroll">
+              Tem um projeto interessante ou gostaria de saber mais sobre meu
+              trabalho? Entre em contato!
+            </p>
+          </div>
+
+          <!-- Informações de Contato -->
+          <div class="column is-5 animate-on-scroll">
+            <div class="contact-info">
+              <!-- Email -->
+              <div class="contact-info-item">
+                <div class="contact-info-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="contact-info-content">
+                  <h3 class="contact-info-title">Email</h3>
+                  <p class="contact-info-text">
+                    <a href="mailto:contato@marcelcorradi.com.br"
+                      >contato@marcelcorradi.com.br</a
+                    >
+                  </p>
+                </div>
+              </div>
+
+              <!-- LinkedIn -->
+              <div class="contact-info-item">
+                <div class="contact-info-icon">
+                  <i class="fab fa-linkedin-in"></i>
+                </div>
+                <div class="contact-info-content">
+                  <h3 class="contact-info-title">LinkedIn</h3>
+                  <p class="contact-info-text">
+                    <a
+                      href="https://www.linkedin.com/in/marcel-corradi-84b26931/"
+                      target="_blank"
+                      rel="noopener"
+                    >
+                      linkedin.com/in/marcel-corradi-84b26931/
+                    </a>
+                  </p>
+                </div>
+              </div>
+
+              <!-- Localização -->
+              <div class="contact-info-item">
+                <div class="contact-info-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="contact-info-content">
+                  <h3 class="contact-info-title">Localização</h3>
+                  <p class="contact-info-text">
+                    São Paulo, SP - Brasil<br />
+                    Disponível para projetos remotos
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Formulário de Contato -->
+          <div class="column is-6 is-offset-1 animate-on-scroll">
+            <div class="contact-page-form-container">
+              <h2 class="contact-page-form-title">Envie uma mensagem</h2>
+              <form class="contact-form">
+                <div class="field">
+                  <label class="label">Nome</label>
+                  <div class="control">
+                    <input
+                      class="input"
+                      type="text"
+                      placeholder="Seu nome completo"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label class="label">Email</label>
+                  <div class="control">
+                    <input
+                      class="input"
+                      type="email"
+                      placeholder="Seu endereço de email"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label class="label">Assunto</label>
+                  <div class="control">
+                    <input
+                      class="input"
+                      type="text"
+                      placeholder="Assunto da mensagem"
+                    />
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label class="label">Mensagem</label>
+                  <div class="control">
+                    <textarea
+                      class="textarea"
+                      placeholder="Sua mensagem"
+                      required
+                    ></textarea>
+                  </div>
+                </div>
+
+                <div class="field">
+                  <div class="control">
+                    <button
+                      class="button is-primary submit-button is-fullwidth"
+                    >
+                      Enviar Mensagem
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="columns">
+            <div class="column is-6">
+              <p class="footer-title">Marcel Corradi Portfolio</p>
+            </div>
+            <div class="column is-6">
+              <div class="social-links is-pulled-right">
+                <a
+                  href="https://www.linkedin.com/in/marcel-corradi-84b26931/"
+                  target="_blank"
+                  rel="noopener"
+                  class="social-link"
+                >
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <hr class="footer-divider" />
+          <div class="columns footer-bottom">
+            <div class="column is-6">
+              <p class="copyright">
+                © 2025 Marcel Corradi. Todos os direitos reservados.
+              </p>
+            </div>
+            <div class="column is-6">
+              <p class="contact-email is-pulled-right">
+                Contato: contato@marcelcorradi.com.br
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
