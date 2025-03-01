@@ -32,9 +32,9 @@ function initClientCarousel() {
         });
     };
     
-    // Para ativar o carrossel automático, descomente estas linhas
-    // cloneLogos();
-    // startCarousel();
+    // Para ativar o carrossel automático
+    cloneLogos();
+    startCarousel();
 }
 
 // Adicionar ao evento DOMContentLoaded existente

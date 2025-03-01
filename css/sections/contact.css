@@ -3,8 +3,8 @@
  * Estilos para a seção de contato da página inicial
  */
 
- .contact-section {
-    padding: var(--spacing-5xl) 0;
+.contact-section {
+    padding: var(--section-padding-vertical) 0;
     background-color: white;
 }
 
@@ -18,7 +18,7 @@
     font-size: 2rem;
     font-weight: var(--font-weight-bold);
     color: var(--color-neutral-900);
-    margin-bottom: var(--spacing-xl);
+    margin-bottom: var(--spacing-md);
 }
 
 .contact-text {

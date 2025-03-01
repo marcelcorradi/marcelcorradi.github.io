@@ -3,8 +3,8 @@
  * Estilos para a seção de clientes da página inicial
  */
 
- .clients-section {
-    padding: var(--spacing-5x1) 0;
+.clients-section {
+    padding: var(--section-padding-vertical) 0;
     background-color: white;
     border-top: 1px solid var(--color-neutral-200);
 }
@@ -32,7 +32,7 @@
 
 .client-logos-carousel {
     display: flex;
-    gap: var(--spacing-2xl);
+    gap: var(--spacing-xl);
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;

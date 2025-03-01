@@ -3,8 +3,8 @@
  * Estilos para a seção de expertise da página inicial
  */
 
- .expertise-section {
-    padding: var(--spacing-5xl) 0;
+.expertise-section {
+    padding: var(--section-padding-vertical) 0;
     background-color: var(--color-neutral-100);
 }
 
@@ -29,5 +29,5 @@
 .expertise-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: var(--spacing-lg);
+    gap: var(--spacing-xl);
 }

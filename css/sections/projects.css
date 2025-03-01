@@ -3,8 +3,8 @@
  * Estilos para a seção de projetos da página inicial
  */
 
- .projects-section {
-    padding: var(--spacing-5xl) 0;
+.projects-section {
+    padding: var(--section-padding-vertical) 0;
     background-color: var(--color-neutral-100);
 }
 
@@ -13,12 +13,14 @@
     font-weight: var(--font-weight-bold);
     color: var(--color-neutral-900);
     margin-bottom: var(--spacing-md);
+    text-align: center;
 }
 
 .projects-subtitle {
     font-size: 1.125rem;
     color: var(--color-neutral-700);
     margin-bottom: var(--spacing-3xl);
+    text-align: center;
 }
 
 .project-list {
