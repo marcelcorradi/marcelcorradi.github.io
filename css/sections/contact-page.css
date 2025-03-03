@@ -3,8 +3,9 @@
  * Estilos para a página de Contato
  */
 
- .contact-page-section {
-    padding: var(--spacing-5xl) 0;
+.contact-page-section {
+    padding-top: var(--spacing-5xl);
+    padding-bottom: var(--spacing-5xl);
     background-color: white;
 }
 

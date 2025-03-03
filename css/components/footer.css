@@ -3,9 +3,10 @@
  * Estilos para o rodapé
  */
 
- .footer {
+.footer {
     background-color: white;
-    padding: var(--spacing-2xl) 0;
+    padding-top: var(--spacing-2xl);
+    padding-bottom: var(--spacing-2xl);
     border-top: 1px solid var(--color-neutral-200);
 }
 

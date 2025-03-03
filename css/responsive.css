@@ -20,7 +20,8 @@
     }
     
     .hero-body {
-        padding: var(--spacing-3xl) 0;
+        padding-top: var(--spacing-3xl);
+        padding-bottom: var(--spacing-3xl);
     }
     
     /* Correção para os cards de projeto */
@@ -60,7 +61,8 @@
     }
     
     .hero-body {
-        padding: var(--spacing-2xl) 0;
+        padding-top: var(--spacing-2xl);
+        padding-bottom: var(--spacing-2xl);
     }
     
     /* AQUI ESTÁ A CORREÇÃO: Mudamos de column-reverse para column 
@@ -103,7 +105,8 @@
     .clients-section,
     .about-section,
     .contact-page-section {
-        padding: var(--spacing-3xl) 0;
+        padding-top: var(--spacing-3xl);
+        padding-bottom: var(--spacing-3xl);
     }
     
     .projects-title,

@@ -13,7 +13,8 @@
 }
 
 .hero-body {
-    padding: var(--section-padding-vertical) 0;
+    padding-top: var(--section-padding-vertical);
+    padding-bottom: var(--section-padding-vertical);
 }
 
 .hero-name {

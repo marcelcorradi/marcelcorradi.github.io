@@ -4,6 +4,8 @@
  */
 
 /* Reset e estilos globais */
+
+
 html {
     scroll-behavior: smooth;
 }
@@ -16,10 +18,7 @@ body {
     overflow-x: hidden;
 }
 
-.container {
-    max-width: 1140px;
-    padding: 0 var(--spacing-lg);
-}
+
 
 /* Animações */
 .will-animate {

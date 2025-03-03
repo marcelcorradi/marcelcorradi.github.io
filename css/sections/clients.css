@@ -4,7 +4,8 @@
  */
 
 .clients-section {
-    padding: var(--section-padding-vertical) 0;
+    padding-top: var(--section-padding-vertical);
+    padding-bottom: var(--section-padding-vertical);
     background-color: white;
     border-top: 1px solid var(--color-neutral-200);
 }

@@ -3,8 +3,9 @@
  * Estilos para a página Sobre
  */
 
- .about-section {
-    padding: var(--spacing-5xl) 0;
+.about-section {
+    padding-top: var(--spacing-5xl);
+    padding-bottom: var(--spacing-5xl);
     background-color: white;
 }
 
